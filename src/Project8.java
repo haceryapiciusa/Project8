@@ -66,7 +66,7 @@ public class Project8 {
 
         WebDriverWait wait = new WebDriverWait( driver, 15 );
         try {
-            wait.until( ExpectedConditions.numberOfElementsToBe( By.xpath( "//tbody//tr" ), 0)  );
+            wait.until( ExpectedConditions.presenceOfElementLocated(By.xpath("")));
             System.out.println("Delete verified!");
         } catch (Exception e){
             System.out.println("Failure!");
